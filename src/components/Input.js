@@ -16,7 +16,9 @@ export default function Input({ addNote }) {
             idx: generateIndex(),
             text: text
         }
-        addNote(note);
+        if (note.text !== '') {
+            addNote(note);
+        }
         setText('')
     }
 
