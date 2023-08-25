@@ -1,5 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  padding: 0 1rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +17,58 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.header {
+  margin: 1rem;
+}
+
+.noteForm {
+ width: 100%;
+ display: flex;
+ gap: 1rem;
+}
+
+.noteForm input[type="text"], .noteForm input[type="submit"] {
+  padding: .75rem .5rem;
+  font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border: 2px solid #c3c3c3;
+  border-radius: 5px;
+}
+
+.noteForm input[type="text"] {
+  width: 80%;
+}
+
+.noteForm input[type="submit"] {
+  width: 20%;
+  cursor: pointer;
+}
+
+.note {
+  width: 100%;
+  padding: 1rem .6rem;
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, #f0f0f0, #fff);
+}
+
+.note:nth-child(even) {
+  background-image: linear-gradient(to left, #f0f0f0, #fff);
+}
+
+.note:nth-child(even) button{
+  background-color: #fff;
+}
+
+.note button {
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
